@@ -46,13 +46,52 @@
     </div>
 </header>
 <div class="banner_wrap">
+    <div class="focus" id="focus">  
+        <div id="focus_m" class="focus_m">
+            <ul>
+                <li class="li_1"><a href="#" hidefocus="true"></a></li>
+                <li class="li_2"><a href="#" hidefocus="true"></a></li>
+                <li class="li_3"><a href="#" hidefocus="true"></a></li>
+            </ul>
+        </div>
+        <a href="javascript:;" class="focus_l" id="focus_l" hidefocus="true" title="上一张"><b></b><span></span></a>
+        <a href="javascript:;" class="focus_r" id="focus_r" hidefocus="true" title="下一张"><b></b><span></span></a>
+    </div>
     <div class="container">
-        <div class="login_box">
+        <div class="login_box hide">
             <form class="pure-form pure-form-stacked login_form">
                 <input type="text" class="pure-u-1" placeholder="手机号" style="margin-top: 81px;">
                 <input type="text" class="pure-u-1" placeholder="密码" style="margin-top: 24px;">
                 <button type="submit" class="pure-u-1 pure-button pure-button-yellow" style="margin-top: 34px;">立即登录</button>
             </form>
+        </div>
+        <div class="regist_box">
+            <div id="regist-content">
+                <div>
+                    <span>贷款主体</span>
+                    <select name="" id="">
+                        <option value="">个人贷款</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="username" value="您的名字">
+                </div>
+                <div>
+                    <input type="text" id="cash" value="额度">
+                </div>
+                <div>
+                    <input type="text" id="using" value="用途">
+                </div>
+                <div>
+                    <input type="text" id="phone" value="联系方式">
+                </div>
+                <div id="checkBox">
+                    <input type="text" id="checknum">
+                    <button class="btn" id="getCheck">获取验证码</button>
+                </div>
+                <p id="apply" class="btn">立即申请</p>
+                <p class="regist-bottom">已经申请过，请<span id="login">登录</span></p>
+            </div>
         </div>
     </div>
 </div>
@@ -310,7 +349,7 @@
             <li>苏ICP备14038857号</li>
         </ul>
     </div>
-    <div id="focus">
+    <div id="focusus">
         <h3>关注我们</h4>
         <p>服务号</p>
     </div>
@@ -319,5 +358,9 @@
         <p>订阅号</p>
     </div>
 </div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>
