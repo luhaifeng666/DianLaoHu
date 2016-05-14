@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/base-min.css">
-    <link rel="stylesheet" href="css/loan.css">
+    <link rel="stylesheet" href="css/product.css">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/grids-responsive-old-ie-min.css">
     <![endif]-->
@@ -46,45 +46,83 @@
     </div>
 </header>
 <!-- header end -->
-
-<img src="images/banner2.jpg" id="banner2" alt="banner" />
 <div class="container">
-	<h2 id="loan-title">
-		全部贷款产品
-	</h2>
-	<div class="loan-box" id="box1">
-		<h2 class="box-title green">供应链贷</h2>
-		<p>供应链贷适用于电气企业材料采购、产品采购</p>
-		<p>最高额度：<span>200</span>万元</p>
-		<p>年化利率：<span>8.4<sub>%</sub> - </span><span class="grey">12<sub>%</sub></span></p>
-		<p>最长期限：<span>6</span>个月</p>
-		<p>还款方式：<span>等额本息</span></p>
-		<p>平台机构：</p>
-		<span class="applyNow green">立即申请</span>
-	</div>
+	<div id="product-content">
+		<p class="product-bread">
+			<span>首页></span>
+			<span>贷款产品></span>
+			<a href="javascript:;">申请贷款</a>
+		</p>
+		<ul class="steps">
+			<li>
+				<img src="images/step1-selected.jpg" alt="">
+				<p class="selected">信息登记</p>
+			</li>
+			<li>
+				<img src="images/step2.jpg" alt="">
+				<p>贷款申请</p>
+			</li>
+			<li>
+				<img src="images/step3.jpg" alt="">
+				<p>上传资料</p>
+			</li>
+			<li>
+				<img src="images/step4.jpg" alt="">
+				<p>筹集借款</p>
+			</li>
+		</ul>
+		<p id="product-bottom">
+			贷款申请 | 我的信用积分：<span id="score"><i>0</i>分（HR）</span>
+			<span class="last">通过上传真实信用认证资料，可提高您的信用等级和额度！</span>
+		</p>
 
-	<div class="loan-box center" id="box1">
-		<h2 class="box-title blue">经营贷</h2>
-		<p>适用于电力行业代理商、经销商、个人、企业等产品购买、工程周转</p>
-		<p>最高额度：<span>200</span>万元</p>
-		<p>年化利率：<span>8.4<sub>%</sub> - </span><span class="grey">12<sub>%</sub></span></p>
-		<p>最长期限：<span>6</span>个月</p>
-		<p>还款方式：<span>等额本息</span></p>
-		<p>平台机构：</p>
-		<span class="applyNow blue">立即申请</span>
-	</div>
-
-	<div class="loan-box" id="box1">
-		<h2 class="box-title yellow">投标保证金贷</h2>
-		<p>适用于电力企业电网投标、重大项目投标等</p>
-		<p>最高额度：<span>200</span>万元</p>
-		<p>年化利率：<span>8.4<sub>%</sub> - </span><span class="grey">12<sub>%</sub></span></p>
-		<p>最长期限：<span>6</span>个月</p>
-		<p>还款方式：<span>等额本息</span></p>
-		<p>平台机构：</p>
-		<span class="applyNow yellow">立即申请</span>
+		<div id="step1" class="">
+			<div>
+				<label for="">真实姓名：</label>
+				臧静
+			</div>
+				<label for="">身份证号：</label><input type="text">
+			<div>
+			</div>
+				<label for="">职位：</label><input type="text" id="job">
+			<div>
+			</div>
+				<label for="">单位名称：</label><input type="text">
+			<div>
+			</div>
+				<label for="">单位地址：</label><input type="text">
+			<div>
+			</div>
+				<label for="">法人：</label><input type="text">
+			<div>
+			</div>
+				<label for="">法人手机：</label><input type="text">
+			<div>
+			</div>
+			<button type="button" class="btn" id="step1-btn">保存并继续</button>
+		</div>
+		<div id="step2">
+			<div>
+				<label for=""></label>
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<button type="button">提交申请</button>
+		</div>
+		<div id="step3"></div>
+		<div id="step4"></div>
 	</div>
 </div>
+
 <!-- footer -->
 <div id="footer">
     <div id="fastLink">

@@ -209,7 +209,6 @@ body {
 	background-color: #f6f6f6;
 }
 
-
 header {
 	background-color: #fff;
 }
@@ -220,71 +219,145 @@ header {
 	width: 100%;
 }
 
-#loan-title {
-	background: url('../images/clock.png') no-repeat 0 5px;
-	padding-left: 60px;
-	color: #000;
-}
-
-.loan-box {
-	float: left;;
-	height: 500px;
-	width: 32%;
+#sidebar {
+	width: 20%;
 	background-color: #fff;
-	border: 1px solid #f1f1f1;
-	margin-bottom: 300px;
-	position: relative;
+	font-size: 16px;
+	float: left;
 }
 
-.loan-box.center {
-	margin: 0 1%;
-}
-
-.loan-box h2 {
-	color: #fff;
-	padding: 5px 16px;
-	font-weight: normal;
-	margin-top: 0 !important;
-}
-
-.loan-box p {
-	padding: 0 16px;
-}
-
-.loan-box p > span {
-	font-weight: bold;
-	font-size: 18px;
-    color: #ea544a;	
-}
-
-.loan-box p > span sub {
-	bottom: 0 !important;
-}
-
-.applyNow {
-	color: #fff;
-	width: 70%;
-	padding: 8px 0;
-	display: block;
+#sidebar .sidebar-title {
 	text-align: center;
+	color: #fff;
+	position: relative;
+	background-color: #ed1b24;
+	padding: 5px 0;
+	margin-top: 0;
+}
+
+#sidebar .sidebar-title span{
 	position: absolute;
-	bottom: 20px; 
-	left: 15%;
-	font-size: 18px;
+	right: 10px;
+	top: 5px;
 }
 
-.green {
-	background-color: #00bc8c;
+#sidebar ul,
+#sidebar li {
+	list-style: initial;
+	padding-left: 39px;
 }
 
-.blue {
-	background-color: #00aae5;
+#sidebar li {
+	padding: 15px 39px;
 }
 
-.yellow {
-	background-color: #ff9933;
+#problem-content {
+	background-color: #fff;
+	float: right;
+	padding: 15px;
+	width: 75%;
 }
 
-.grey {
-	color: #777775 !important;
+#problems {
+	margin: 60px auto;
+	overflow: auto;
+}
+
+#problems > div {
+	border: 1px solid #e6e6e6;
+}
+
+
+.problem-title {
+	border-bottom: 3px solid #f1f1f1;
+    margin: 0;
+    position: relative;
+    padding: 47px 0;
+    margin-top: -55px;
+}
+
+.problem-title span {
+	padding: 10px 0;
+	border-bottom: 3px solid #00a3e3;
+	display: block;
+	width: 10%;
+	font-size: 17px;
+	position: absolute;
+}
+
+.problem-box {
+	padding: 0 20px;
+	width: 44%;
+	float: left;
+}
+
+.problem-box.first {
+	border-right: 1px dashed #e6e6e6;
+}
+
+.problem-box h2 {
+	background: url(../images/problem-search.jpg) no-repeat 30px 0;	
+}
+
+.problem-box.first h2 {
+	background: url(../images/problem-apply.jpg) no-repeat 30px 0;
+}
+
+.problem-box ul {
+	padding-left: 65px;
+}
+
+.problem-box ul,
+.problem-box li {
+	list-style: initial;
+	font-size: 14px;
+	margin: 8px 0;
+}
+
+.problem-box a {
+	color: #ff9001;
+	padding-left: 65px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.problem-box h2 {
+	color: #ed1b24;
+	text-align: center;
+	padding: 25px 0;
+}
+
+.problem-top {
+	padding: 30px 15px;
+	border-bottom: 1px dashed #e6e6e6;
+	overflow: auto;
+}
+
+.problem-bottom h2 {
+	padding-left: 65px;
+}
+
+.problem-bottom ul {
+	margin-left: 35px;
+}
+
+.problem-bottom li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+li.step1 p {
+	padding-left: 40px;
+}
+
+li.step2 p {
+	padding-left: 10px;
+}
+
+li.step3 p {
+	padding-left: 38px;
+}
+
+li.step4 p {
+	padding-left: 31px;
 }
