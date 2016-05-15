@@ -46,16 +46,40 @@
     </div>
 </header>
 <div class="banner_wrap">
-    <div class="focus" id="focus">  
-        <div id="focus_m" class="focus_m">
-            <ul>
-                <li class="li_1"><a href="#" hidefocus="true"></a></li>
-                <li class="li_2"><a href="#" hidefocus="true"></a></li>
-                <li class="li_3"><a href="#" hidefocus="true"></a></li>
-            </ul>
+    <div id="main-outer">
+    <div id="main-wrap">
+        <div id="main">
+            <div class="content">
+                <!--图片轮播-->
+                <div class="hot_wrap">
+                    <div id="target" class="tbui_slideshow_container">
+                        <ul class="tbui_slideshow_list">
+                            <li><a href="javascript:;" target="_blank">
+                            <img src="images/banner.jpg"  />
+                            </a></li>
+                            <li><a href="javascript:;" target="_blank">
+                            <img src="images/banner.jpg" />
+                            </a></li>
+                            <li><a href="javascript:;" target="_blank">
+                            <img src="images/banner.jpg" />
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <!--导航条的结构-->
+                    <ul id="controller">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <a href="#" id="prev">上一页</a> <a href="#" id="next">下一页</a>
+                </div>
+                <div class="left-wrap">
+                </div>
+            </div>
+            <div class="clear">
+            </div>
         </div>
-        <a href="javascript:;" class="focus_l" id="focus_l" hidefocus="true" title="上一张"><b></b><span></span></a>
-        <a href="javascript:;" class="focus_r" id="focus_r" hidefocus="true" title="下一张"><b></b><span></span></a>
     </div>
     <div class="container">
         <div class="login_box hide">
@@ -362,5 +386,18 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/login.js"></script>
+<script>
+$(function () {
+new SlideShow({
+nav: "#controller",
+effect : "fade",
+target: "#target",
+activeClass: "active",
+next: "#next",
+prev: "#prev",
+auto: true
+})
+})
+</script>
 </body>
 </html>
