@@ -398,6 +398,7 @@ ul,li {
 
 #focusus {
     width: 8% !important;
+    padding-right: 0 !important;
 }
 
 #footer h3 {
@@ -412,6 +413,10 @@ ul,li {
 
 #footer a:hover {
     color: #fff;
+}
+
+#last {
+    padding-left: 30px !important;
 }
 
 #last h3 {
@@ -500,6 +505,10 @@ ul,li {
 #login {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.erweima {
+    width: 120px;
 }
 
 /*focus*/
