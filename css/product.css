@@ -269,20 +269,30 @@ i {
 	font-size: 16px;
 }
 
-#step1 div {
+#step1 div,
+#step2 div{
 	margin: 20px 0;
 }
 
-#step1 label {
+#step1 label,
+#step2 label {
 	display: inline-block;
 	width: 90px;
 	text-align: right;
 	margin-right: 10px;
 }
 
-#step1 input {
+#step1 input,
+#step2 div:first-child input {
 	width: 300px;
 	padding: 5px;
+}
+
+#step2 input,
+#step2 select{
+    padding: 5px 0;
+    width: 150px;
+    margin-right: 3px;
 }
 
 #job {
@@ -302,4 +312,84 @@ i {
 
 .hide {
 	display: none;
+}
+
+.tip {
+    color: #c9ced7;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.returnway,.type,.agree  {
+    width: initial !important;
+    margin-left: 10px;
+}
+
+.returnway#returnway_one,
+.type#type_one {
+    margin-left: 0;
+}
+
+#agreerule {
+    padding-left: 95px;
+}
+
+#upload {
+    padding: 5px 16px;
+    box-shadow: 3px 3px 3px #000;
+    border: none;
+    border-radius: 5px;
+}
+
+.red {
+    color: #ff0d18;
+}
+.blue {
+    color: #8fbaf4 !important;
+}
+.purple {
+    color: #d693f1;
+}
+.green {
+    color: #90c844;
+}
+.grey {
+    color: #cccccc;
+}
+.noload {
+    background-color: #cccccc;
+}
+#step3 ul {
+    margin: 20px 10% 10px;
+    overflow: auto;
+}
+#step3 li {
+    /* padding: 8px; */
+    float: left;
+    margin: 0 30px;
+}
+#step3 p {
+    clear: both;
+}
+.checking {
+    background-color: #000;
+}
+.pass {
+    background-color: #8fbaf4;
+}
+.error {
+    background-color: #ff0d18;
+}
+
+#simple {
+    padding-left: 100px; 
+}
+
+#step4 {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#step4 .red{
+    margin-bottom: .5rem !important;
 }

@@ -511,6 +511,12 @@ ul,li {
     width: 120px;
 }
 
+#login-statue {
+    color: #e82325;
+    padding: 10px;
+    line-height: 36px;
+}
+
 /*focus*/
 #controller {
 width: 100px;

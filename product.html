@@ -101,25 +101,111 @@
 			</div>
 			<button type="button" class="btn" id="step1-btn">保存并继续</button>
 		</div>
-		<div id="step2">
+		<div id="step2" class="hide">
 			<div>
-				<label for=""></label>
+				<label for="">借款标题：</label>
+				<input type="text" id="title">
+				<span class="tip">标题不超过15个字</span>
 			</div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<button type="button">提交申请</button>
+			<div>
+				<label for="">借款用途：</label>
+				<select name="" id="way">
+					<option value="">短期周转</option>
+				</select>
+			</div>
+			<div>
+				<label for="">借款金额：</label>
+				<input type="text" id="cash">
+				元<span class="tip">借款金额500元以上，需为50的倍数</span>
+			</div>
+			<div>
+				<label for="">借款期限：</label>
+				<select name="" id="time">
+					<option value="">一个月</option>
+				</select>
+			</div>
+			<div>
+				<label for="">年利率：</label>
+				<input type="text" id="percent">%
+				<span class="tip">利率范围是10%-24%，且只保留小数点后一位</span>
+			</div>
+			<div>
+				<label for="">筹标期限：</label>
+				<select name="" id="time2">
+					<option value="">5天</option>
+				</select>
+			</div>
+			<div>
+				<label for="">还款方式：</label>
+				<input type="radio" name="returnway" class="returnway" id="returnway_one"><span class="blue">按月付息，到期还本</span>
+				<input type="radio" name="returnway" class="returnway" id="returnway_two"><span class="blue">等额本息</span>
+			</div>
+			<div>
+				<label for="">借款描述：</label>
+				<textarea name="" id="" cols="60" rows="10"></textarea>
+			</div>
+			<div>
+				<label for="">附件：</label>
+				<button type="button" id="upload">上传</button>
+			</div>
+			<div>
+				<label for="">验证码：</label>
+				<input type="text" id="checkNum">
+				<img src="" alt="" id="checkimg">
+			</div>
+			<div>
+				<label for="">申请标类型：</label>
+				<input type="radio" name="type" class="type" id="type_one"><span class="red">信用认证标</span>
+				<input type="radio" name="type" class="type" id="type_two"><span class="blue">机构相保标</span>
+				<input type="radio" name="type" class="type" id="type_three"><span class="purple">实地认证标</span>
+				<input type="radio" name="type" class="type" id="type_four"><span class="green">净值标</span>
+			</div>
+			<div id="agreerule">
+				<input type="checkbox" class="agree">我同意
+				<a href="javascript:;" class="blue">
+					金陵e贷收费条款
+				</a>
+				<input type="checkbox" class="agree">
+				我同意以上信息技术披露要求
+			</div>
+			<button type="button" class="btn" id="step2-btn">提交申请</button>
 		</div>
-		<div id="step3"></div>
-		<div id="step4"></div>
+		<div id="step3" class="hide">
+			<p>
+				<span class="blue">个人信用认证</span>
+				<span>以下五项为选填项</span>
+			</p>
+			<ul>
+				<li class=""><img src="images/checking.jpg" alt=""></li>
+				<li class=""><img src="images/unload.jpg" alt=""></li>
+				<li class=""><img src="images/unload.jpg" alt=""></li>
+				<li class=""><img src="images/unload.jpg" alt=""></li>
+				<li class=""><img src="images/unload.jpg" alt=""></li>
+			</ul>
+			<p class="blue">公司信用认证</p>
+			<p>
+				<span>您可以选择上传的认证项目，只要通过了这些可选信用认证，将会提高您的“信用等级”和“信用额度”，</span>
+				<span class="red">如果您在上传过程中遇到任何问题，请联系客服</span>
+			</p>
+			<ul>
+				<li class=""><img src="images/checking.jpg" alt=""></li>
+				<li class=""><img src="images/unload.jpg" alt=""></li>
+				<li class=""><img src="images/error.jpg" alt=""></li>
+				<li class=""><img src="images/pass.jpg" alt=""></li>
+				<li class=""><img src="images/unload.jpg" alt=""></li>
+			</ul>
+			<p id="simple">
+				<span class="grey">灰色：代表未上传；</span>
+				<span>黑色：代表正在审核；</span>
+				<span class="red">红色：代表审核未通过，请重新上传；</span>
+				<span class="blue">蓝色：代表审核通过。</span>
+			</p>
+			<button type="button" class="btn" id="step3-btn">现在提交</button>
+		</div>
+		<div id="step4" class="hide">
+			<p class="red">恭喜您发布成功</p>
+			<p>您可以前往<a href="javascript:;" class="blue"> 我的贷款产品</a> 查看您所发布的贷款申请</p>
+		</div>
 	</div>
 </div>
 
