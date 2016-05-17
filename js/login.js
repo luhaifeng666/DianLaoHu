@@ -29,4 +29,14 @@ $(function(){
 		$('.regist_box').addClass('hide');
 		$('.login_box').removeClass('hide');
 	});
+
+	$('.tbui_slideshow_list li').each(function(){
+		var index = $(this).index();
+		if($(this).find('img').length < 1) {
+			$(this).remove();
+			if($('#controller li:eq('+index+')')) {
+				$('#controller li:eq('+index+')').remove();
+			}
+		}
+	});
 });
