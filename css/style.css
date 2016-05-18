@@ -529,14 +529,6 @@ width: 13px;
 height: 13px;
 text-indent:-99999px;
 cursor:pointer;
-background:url(icon_page.png) no-repeat;
-_background:none;
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true",src='icon_page.png', sizingMethod='crop');
-}
-#controller li.active {
-background:url(icon_page_active.png) no-repeat;
-_background:none;
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true",src='icon_page_active.png', sizingMethod='crop');
 }
 .tbui_slideshow_container {
 width: 100%;
