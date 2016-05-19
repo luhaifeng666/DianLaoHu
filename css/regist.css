@@ -182,8 +182,9 @@ ul,li {
     width: 5% !important;
 }
 
-#focus {
+#focusus {
     width: 8% !important;
+    padding-right: 0 !important;
 }
 
 #footer h3 {
@@ -202,6 +203,16 @@ ul,li {
 
 #last h3 {
     margin-bottom: 5.1em !important;
+}
+
+.erweima {
+    width: 120px;
+}
+
+#login-statue {
+    color: #e82325;
+    padding: 10px;
+    line-height: 36px;
 }
 
 /*----regist-----*/

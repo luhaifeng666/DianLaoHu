@@ -182,8 +182,18 @@ ul,li {
     width: 5% !important;
 }
 
-#focus {
+#focusus {
     width: 8% !important;
+    padding-right: 0 !important;
+}
+.erweima {
+    width: 120px;
+}
+
+#login-statue {
+    color: #e82325;
+    padding: 10px;
+    line-height: 36px;
 }
 
 #footer h3 {
