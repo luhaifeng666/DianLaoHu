@@ -39,4 +39,40 @@ $(function(){
 			}
 		}
 	});
+
+	$(window).scroll(function(){
+		var winH = $(window).height(),
+			scorllDis = $(window).scrollTop(),
+			offDis;
+		$('.left_box').each(function(){
+			offDis = $(this).offset().top;
+			if(offDis - scorllDis < winH && !$(this).hasClass('show')){
+				$(this).addClass('show');
+				$(this).find('.text_red1').each(function(){
+					var value,
+						time = value / 200,
+						total = 0,
+						sel = $(this),
+						numTest = /^-?([1-9]d*.d*|0.d*[1-9]d*|0?.0+|0)$/;
+						if(numTest.test($(this).text())){
+							value = $(this).text().split('.')[0];
+						}else {
+							value = parseInt($(this).text());
+						}
+						t = setInterval(function(){
+							if(total < value) {
+								total += 1;
+								if(!numTest.test(sel.text())){
+									sel.text(total + '.' + $(this).text().split('.')[1]);
+								}else {
+									sel.text(total);
+								}
+							}else {
+								clearInterval(t);
+							}
+						},time);
+				});
+			}
+		});
+	});
 });
