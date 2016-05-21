@@ -49,21 +49,23 @@ $(function(){
 			if(offDis - scorllDis < winH && !$(this).hasClass('show')){
 				$(this).addClass('show');
 				$(this).find('.text_red1').each(function(){
-					var value,
-						time = value / 200,
+					var value,tail,
+						time = 2000 / value,
 						total = 0,
 						sel = $(this),
-						numTest = /^-?([1-9]d*.d*|0.d*[1-9]d*|0?.0+|0)$/;
-						if(numTest.test($(this).text())){
+						index = sel.parents('.pure-u-1-3').index(),
+						numTest = /^(-?\d+)(\.\d+)?$/;
+						if(index == 1){
 							value = $(this).text().split('.')[0];
+							tail = $(this).text().split('.')[1];
 						}else {
 							value = parseInt($(this).text());
 						}
-						t = setInterval(function(){
+						var t = setInterval(function(){
 							if(total < value) {
 								total += 1;
-								if(!numTest.test(sel.text())){
-									sel.text(total + '.' + $(this).text().split('.')[1]);
+								if(tail){
+									sel.text(total + '.' + tail);
 								}else {
 									sel.text(total);
 								}
@@ -72,6 +74,20 @@ $(function(){
 							}
 						},time);
 				});
+				var persons = parseInt($(this).find('.text_red').text());
+				if(persons) {
+					var pTime = 2000 / persons,
+						pc = 0,
+						el = $(this);
+					 	pt = setInterval(function(){
+						if(pc<persons){
+							el.find('.text_red').text(pc);
+							pc++;
+						}else {
+							clearInterval(pt);
+						}
+					}, pTime);
+				}
 			}
 		});
 	});
